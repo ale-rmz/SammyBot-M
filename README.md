@@ -103,7 +103,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
   
 
 ## `🌼COLABORADORES DEL BOT🌼` 
-<a href="[https://github.com/Jostin207]"><img src="https://github.com/JOSTINofc.png" width="100" height="100" alt="Ender"/></a>
+<a href="[https://github.com/JOSTINofc]"><img src="https://github.com/JOSTINofc/Goku-Bot-Lite.png" width="100" height="100" alt="Ender"/></a>
 <a href="[https://github.com/Jxtxn17]"><img src="https://github.com/Jxtxn17.png" width="100" height="100" alt="Jxtxn"/></a>
 <td align="center"><a 
 <a href="[https://github.com/diegojadibot]"><img src="https://github.com/diegojadibot.png" width="100" height="100" alt="Jxtxn"/></a>
