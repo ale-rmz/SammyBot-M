@@ -16,16 +16,16 @@
     "eslint": "eslint .",
     "eslintfix": "eslint --fix ."
   },
-  "homepage": "https://github.com/JOSTINofc/Lobo-Bot-Lite",
+  "homepage": "https://github.com/JOSTINofc/Goku-Bot-Lite",
   "author": {
     "name": "Jostin"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JOSTINofc/Lobo-Bot-Lite.git"
+    "url": "git+https://github.com/JOSTINofc/Goku-Bot-Lite.git"
   },
   "bugs": {
-    "url": "https://github.com/JOSTINofc/Lobo-Bot-Lite/issues"
+    "url": "https://github.com/JOSTINofc/Goku-Bot-Lite/issues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
