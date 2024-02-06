@@ -1,6 +1,6 @@
 package lobo
 
-import "ender"
+import "jostin"
 
 func lobo() {
     ender.Println("Basura eliminada!")
