@@ -1,7 +1,7 @@
 {
-  "name": "Lobo-Bot-Lite",
+  "name": "Goku-Bot-Lite",
   "version": "1.0.0",
-  "description": "Lobo-Bot-Lite",
+  "description": "Goku-Bot-Lite",
   "main": "index.js",
   "type": "module",
   "directories": {
@@ -16,16 +16,16 @@
     "eslint": "eslint .",
     "eslintfix": "eslint --fix ."
   },
-  "homepage": "https://github.com/Ender-GB-Isis777/Lobo-Bot-Lite",
+  "homepage": "https://github.com/JOSTINofc/Lobo-Bot-Lite",
   "author": {
-    "name": "Ender-GB"
+    "name": "Jostin"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ender-GB-Isis777/Lobo-Bot-Lite.git"
+    "url": "git+https://github.com/JOSTINofc/Lobo-Bot-Lite.git"
   },
   "bugs": {
-    "url": "https://github.com/Ender-GB-Isis777/Lobo-Bot-Lite/issues"
+    "url": "https://github.com/JOSTINofc/Lobo-Bot-Lite/issues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
