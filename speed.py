@@ -2006,7 +2006,7 @@ def main():
             msg = '%s' % e
             if not msg:
                 msg = '%r' % e
-            raise SystemExit('ERROR: %s' % msg)
+            raise SystemExit('ERROR: %s' % msg) 
 
 
 if __name__ == '__main__':
