@@ -12,7 +12,7 @@ const folders = ['.', ...Object.keys(require(path.join(__dirname, './package.jso
 const files = [];
 for (const folder of folders) {
   for (const file of fs.readdirSync(folder).filter((v) => v.endsWith('.js'))) {
-    files.push(path.resolve(path.join(folder, file)));
+    files.push(path.resolve(path.join(folder, file))); 
   }
 }
 
