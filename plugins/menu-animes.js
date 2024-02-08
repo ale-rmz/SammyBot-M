@@ -19,10 +19,10 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `┏━━━━━━━━━━━━━━━━━━━━┓
-┃ ◉— 𝐋𝐎𝐁𝐎-𝐁𝐎𝐓-𝐌𝐃 —◉
+┃ ◉— 𝐆𝐎𝐊𝐔𝐁𝐎𝐓𝐋𝐈𝐓𝐄-𝐌𝐃 —◉
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-┣⟣☯︎ 𝙾𝚆𝙽𝙴𝚁: 𝐄𝐍𝐃𝐄𝐑 𝐆𝐁
-┣⟣☯︎ 𝙽𝚄𝙼𝙴𝚁𝙾: +505 76390682
+┣⟣☯︎ 𝙾𝚆𝙽𝙴𝚁: 𝐉𝐎𝐒𝐓𝐈𝐍 
+┣⟣☯︎ 𝙽𝚄𝙼𝙴𝚁𝙾: +593 939 005 387
 ┣⟣☯︎ 𝙵𝙴𝙲𝙷𝙰: ${date}
 ┣⟣☯︎ 𝚃𝙸𝙴𝙼𝙿𝙾 𝙰𝙲𝚃𝙸𝚅𝙾: ${uptime}
 ┣⟣☯︎ 𝚄𝚂𝚄𝙰𝚁𝙸𝙾𝚂: ${rtotalreg}
