@@ -1,19 +1,19 @@
 const handler = async (m, {conn, usedPrefix}) => {
   const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
   const document = doc[Math.floor(Math.random() * doc.length)];
-  const text = `𝐇𝐨𝐥𝐚 𝐮𝐬𝐮𝐚𝐫𝐢𝐨 👋, 𝐓𝐞 𝐢𝐧𝐯𝐢𝐭𝐨 𝐚 𝐮𝐧𝐢𝐫𝐭𝐞 𝐚 𝐥𝐨𝐬 𝐠𝐫𝐮𝐩𝐨𝐬 𝐎𝐅𝐂 𝐝𝐞 𝐋𝗼𝗯𝗼-𝐁𝗼𝘁-𝐌𝐃 :D
+  const text = `𝐇𝐨𝐥𝐚 𝐮𝐬𝐮𝐚𝐫𝐢𝐨 👋, 𝐓𝐞 𝐢𝐧𝐯𝐢𝐭𝐨 𝐚 𝐮𝐧𝐢𝐫𝐭𝐞 𝐚 𝐥𝐨𝐬 𝐠𝐫𝐮𝐩𝐨𝐬 𝐎𝐅𝐂 𝐝𝐞 𝑮𝒐𝒌𝒖𝑩𝒐𝒕𝑳𝒊𝒕𝒆-𝑴𝑫 :D
 
-➤ 𝐆𝐫𝐮𝐩𝐨𝐬 𝐨𝐟𝐢𝐜𝐢𝐚𝐥𝐞𝐬 𝐝𝐞𝐥 𝐋𝐨𝐛𝐨:
+➤ 𝐆𝐫𝐮𝐩𝐨𝐬 𝐨𝐟𝐢𝐜𝐢𝐚𝐥𝐞𝐬 𝐝𝐞𝐥 𝑮𝒐𝒌𝒖:
 
 🌹 𝐆𝐑𝐔𝐏𝐎 𝐎𝐅𝐂:
  
-༄ ${gp1} ༆
+༄ https://chat.whatsapp.com/G9MpDVmJtbiIpItEZpg70s ༆
 
-🌹 𝗖𝗮𝗻𝗮𝗹 𝗟𝗼𝗯𝗼:
-༄ ${gp2} ༄
+🌹 𝗖𝗮𝗻𝗮𝗹 𝗚𝗼𝗸𝘂:
+༄ https://whatsapp.com/channel/0029VaJL0xn0LKZL7FtiRs1e ༄
 `.trim();
   const buttonMessage= {
-    'document': {url: `https://github.com/Ender-GB-Isis777/LOBO-BOT-MD`},
+    'document': {url: `https://github.com/JOSTINofc/Goku-Bot-Lite`},
     'mimetype': `application/${document}`,
     'fileName': `「 𝗛𝗲𝗹𝗹𝗼 𝘄𝗼𝗿𝗹 」`,
     'fileLength': 99999999999999,
