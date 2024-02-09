@@ -7,7 +7,7 @@ const handler = async (m, { conn, args }) => {
     ➪ cd && termux-setup-storage
     ➪ apt-get update -y && apt-get upgrade -y
     ➪ pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn 
-    ➪ git clone https://github.com/Ender-GB-Isis777/LOBO-BOT-MD.git && cd LOBO-BOT-MD
+    ➪ git clone https://github.com/JOSTINofc/Goku-Bot-Lite && cd Goku-Bot-Lite
     ➪ yarn install
     ➪︎︎︎ npm install
     ➪ npm update
