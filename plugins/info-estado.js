@@ -5,14 +5,14 @@ const handler = async (m, {conn}) => {
     const _uptime = process.uptime() * 1000;
     const uptime = clockString(_uptime);
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
-    const str = `╭────[💖 𝐋𝐎𝐁𝐎-𝐁𝐎𝐓-𝐌𝐃 💖]
+    const str = `╭────[💖 𝑮𝒐𝒌𝒖𝑩𝒐𝒕𝑳𝒊𝒕𝒆-𝑴𝑫 💖]
 │
 │ *➤ ʜᴏʟᴀ ${taguser}*
 │
 │ *=> 🖥️ ᴛɪᴇᴍᴘᴏ ᴀᴄᴛɪᴠᴏ:* ${uptime}
 │ *=> 🖱️ ʙᴏᴛ ᴅᴇ ᴜsᴏ ᴘᴜʙʟɪᴄᴏ*
-│ *=> 🍇 𝐂𝐑𝐄𝐀𝐃𝐎𝐑: 𝐄𝐍𝐃𝐄𝐑 𝐆𝐁 𝐋𝐃*
-│ *=> 🍁 ʀᴇᴘᴏsɪᴛᴏʀɪᴏ ᴏғᴄ:* https://github.com/Ender-GB-Isis777/LOBO-BOT-MD
+│ *=> 🍇 𝐂𝐑𝐄𝐀𝐃𝐎𝐑: 𝑱𝑶𝑺𝑻𝑰𝑵*
+│ *=> 🍁 ʀᴇᴘᴏsɪᴛᴏʀɪᴏ ᴏғᴄ:* https://github.com/JOSTINofc/Goku-Bot-Lite
 ╰────────────────`.trim();
     if (m.isGroup) {
       conn.sendMessage(m.chat, {text: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.titulowm, "containsAutoReply": true, "mediaType": 1, "thumbnail": pp, "mediaUrl": global.md`, "sourceUrl": global.md`}}}, {quoted: m});
