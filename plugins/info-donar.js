@@ -1,4 +1,4 @@
-/* ⚠ PROHIBIDO EDITAR ⚠ */
+/* ⚠ PROHIBIDO EDITAR ⚠ */ 
 
 import {generateWAMessageFromContent} from '@whiskeysockets/baileys';
 import fs from 'fs';
