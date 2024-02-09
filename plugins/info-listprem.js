@@ -61,7 +61,7 @@ let usuario = global.db.data.users[m.sender].premiumTime
 let user = Object.entries(global.db.data.users).filter(user => user[1].premiumTime).map(([key, value]) => {
 return { ...value, jid: key }})
 let premTime = global.db.data.users[m.sender].premiumTime
-let prem = global.db.dat🧿 𝙻𝙾𝙱𝙾-𝙱𝙾𝚃-𝙼𝙳 🔮a.users[m.sender].premium
+let prem = global.db.dat🧿 𝙶𝙾𝙺𝚄𝙱𝙾𝚃𝙻𝙸𝚃𝙴-𝙼𝙳 🔮a.users[m.sender].premium
 let userr = await '@' + m.sender.split`@`[0]
 let waktu = clockString(`${premTime - new Date() * 1} `)
 let sortedP = user.map(toNumber('premiumTime')).sort(sort('premiumTime'))
