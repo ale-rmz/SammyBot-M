@@ -10,7 +10,7 @@
 
 ## `💫𝙶𝙾𝙺𝚄-𝙱𝙾𝚃-𝙻𝙸𝚃𝙴-𝙼𝙳` 
 <p align="center">
-<img src="https://i.ibb.co/wYRhwjt/lobo-bot.jpg" alt="GokuBotLite-MD" width="900"/>
+<img src="https://telegra.ph/file/ebf9433ed0466aec8cfff.jpg" alt="GokuBotLite-MD" width="900"/>
 </p>
 ------------------
 
