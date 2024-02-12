@@ -45,8 +45,8 @@ global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 
 //****************************
-global.gp1 = 'https://whatsapp.com/channel/0029VaCtl9r05MUjcuMd9l2W'
-global.gp2 = 'https://chat.whatsapp.com/Li46EUQhA5tJqXEENfKPJd'
+global.gp1 = 'https://whatsapp.com/channel/0029VaJL0xn0LKZL7FtiRs1e'
+global.gp2 = 'https://whatsapp.com/channel/0029VaJL0xn0LKZL7FtiRs1e'
 global.wm2 = `▸ ${dia} ${fecha}\n▸ 𝙶𝙾𝙺𝚄-𝙱𝙾𝚃-𝙻𝙸𝚃𝙴`;
 global.gt = '★𝗚𝗼𝗸𝘂-𝗕𝗼𝘁-𝗟𝗶𝘁𝗲★';
 global.mysticbot = '★𝗚𝗢𝗞𝗨 - 𝗟𝗜𝗧𝗘★';
