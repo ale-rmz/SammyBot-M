@@ -22,7 +22,7 @@ global.packname = '🌼𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝙱𝙾𝚃\n🌼𝙿�
 global.author = '☆𝑮𝒐𝒌𝒖𝑩𝒐𝒕𝑳𝒊𝒕𝒆-𝑴𝑫☆\n☆𝑮𝒐𝒌𝒖𝑩𝒐𝒕𝑳𝒊𝒕𝒆-𝑴𝑫☆\n☆𝕬𝖗𝖎𝖊𝖘☆\n☆𝕺𝖜𝖓𝖊𝖗𝖘☆ ';
 global.wm = '𝗚𝗼𝗸𝘂 - 𝗕𝗼𝘁 - 𝗟𝗶𝘁𝗲';
 global.titulowm = ' 𝗚𝗼𝗸𝘂-𝗕𝗼𝘁-𝗟𝗶𝘁𝗲 ';
-global.titulowm2 =`∇𝗚 𝗢 𝗞 𝗨 - 𝗕 𝗢 𝗧 - 𝗟 𝗜 𝗧 𝗘Δ`
+global.titulowm2 =`𝗚 𝗢 𝗞 𝗨 - 𝗕 𝗢 𝗧 - 𝗟 𝗜 𝗧 𝗘`
 global.igfg = '𝗚𝗼𝗸𝘂 - 𝗕𝗼𝘁 - 𝗟𝗶𝘁𝗲'  ;
 global.wait = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*';
 
@@ -46,7 +46,7 @@ global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', s
 
 //****************************
 global.gp1 = 'https://whatsapp.com/channel/0029VaJL0xn0LKZL7FtiRs1e'
-global.gp2 = 'https://whatsapp.com/channel/0029VaJL0xn0LKZL7FtiRs1e'
+global.gp2 = 'https://chat.whatsapp.com/G9MpDVmJtbiIpItEZpg70s'
 global.wm2 = `▸ ${dia} ${fecha}\n▸ 𝙶𝙾𝙺𝚄-𝙱𝙾𝚃-𝙻𝙸𝚃𝙴`;
 global.gt = '★𝗚𝗼𝗸𝘂-𝗕𝗼𝘁-𝗟𝗶𝘁𝗲★';
 global.mysticbot = '★𝗚𝗢𝗞𝗨 - 𝗟𝗜𝗧𝗘★';
