@@ -20,7 +20,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     } else if (command === 'play2') {
       additionalText = '𝐕𝐢𝐝𝐞𝐨 🎥';
     }
-    const texto1 = `🐺𝗟𝗼𝗯𝗼-𝗕𝗼𝘁-𝗠𝗗🐺
+    const texto1 = `💫𝗚𝗢𝗞𝗨-𝗕𝗢𝗧-𝗟𝗜𝗧𝗘-𝗠𝗗💫
 ☆ 📑 𝐓𝐢𝐭𝐮𝐥𝐨: ${yt_play[0].title}
 ☆ 🎼 𝐃𝐮𝐫𝐚𝐜𝐢𝐨𝐧: ${secondString(yt_play[0].duration.seconds)}
 ☆ 🗓️ 𝐕𝐢𝐬𝐭𝐚𝐬: ${`${MilesNumber(yt_play[0].views)}`}
@@ -178,7 +178,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     } else if (command === 'play2') {
       additionalText = '𝐕𝐢𝐝𝐞𝐨 🎥';
     }
-    const texto1 = ``🐺𝗟𝗼𝗯𝗼-𝗕𝗼𝘁-𝗠𝗗🐺
+    const texto1 = ``💫𝗚𝗢𝗞𝗨𝗕𝗢𝗧𝗟𝗜𝗧𝗘-𝗠𝗗💫
 ☆ 📑 𝐓𝐢𝐭𝐮𝐥𝐨: ${yt_play[0].title}
 ☆ 🎼 𝐃𝐮𝐫𝐚𝐜𝐢𝐨𝐧: ${secondString(yt_play[0].duration.seconds)}
 ☆ 🗓️ 𝐕𝐢𝐬𝐭𝐚𝐬: ${`${MilesNumber(yt_play[0].views)}`}
