@@ -2,7 +2,7 @@
 
 ## `💫𝙎𝙚𝙗𝙖𝙨𝘽𝙤𝙩-𝙈𝘿` 
 <p align="center">
-<img src="https://telegra.ph/file/e541b42d2ceb419424f4b.jpg" alt="SebasBot-MD" width="900"/>
+<img src="https://telegra.ph/file/b43195a12b0ec71a61e92.jpg" alt="SebasBot-MD" width="900"/>
 </p>
 ------------------
 
