@@ -19,29 +19,29 @@
 
 
 
-### ▢`🍀𝙉𝙐𝙀𝙎𝙏𝙍𝙊 𝙄𝙂🍀`
+### ▢`⚡𝙉𝙐𝙀𝙎𝙏𝙍𝙊 𝙄𝙂⚡`
 
 ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00CB22&width=435&lines=Sígueme+En+Instagram;No+seas+malx%3A3;)
 <a href="https://www.instagram.com/usxr_angelito?igsh=OGY1bGE1d3EyY212" target="blank"><img src="https://img.shields.io/badge/INSTAGRAM_DEL_CREADOR-25D366?style=for-the-badge&logo=Instagram&logoColor=white" />
 </a>
 
-### `—◉ 📍𝗔𝗰𝘁𝗶𝘃𝗮𝗿 𝗲𝗻 𝘁𝗲𝗿𝗺𝘂𝘅📍` 
+### `—◉ ♣️𝗔𝗰𝘁𝗶𝘃𝗮𝗿 𝗲𝗻 𝘁𝗲𝗿𝗺𝘂𝘅♣️◉—` 
 
 ```bash
-𝘽𝙤𝙩 𝙙𝙚 𝙪𝙨𝙤 𝙚𝙭𝙘𝙡𝙪𝙨𝙞𝙫𝙤 𝙣𝙤 𝙥𝙪𝙗𝙡𝙞𝙘𝙤
+𝘽𝙤𝙩 𝙙𝙚 𝙪𝙨𝙤 𝙚𝙭𝙘𝙡𝙪𝙨𝙞𝙫𝙤 𝙣𝙤 𝙥𝙪𝙗𝙡𝙞𝙘𝙤✖️
 ```
 
- ### `—◉ 🌹DUDAS SOBRE EL BOT?,CONTACTA AL CREADOR🌹`
+ ### `—◉ ⚡DUDAS SOBRE EL BOT?,CONTACTA AL CREADOR⚡`
 <a href="http://wa.me/59168683798" target="blank"><img src="https://img.shields.io/badge/KARIM_CREADOR-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
-### `—◉📄✦CUSTOMER SUPPORT✦📄`
+### `—◉📄CUSTOMER SUPPORT📄◉—`
 <a href="http://wa.me/59168683798" target="blank"><img src="https://img.shields.io/badge/KARIM_COSTOMER_SUPPORT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 
-## `🌹EDITOR & PROPIETARIO DEL BOT🌹` 
+## `🧸EDITOR & PROPIETARIO DEL BOT🧸` 
 <a href="https://github.com/Karim-off"><img src="https://github.com/Karim-off.png" width="250" height="250" alt="Jostin"/></a>
   
 
 
   
-`𝙎𝙚𝙗𝙖𝙨𝘽𝙤𝙩-𝙈𝘿-  𝙺𝙰𝚁𝙸𝙼-𝙾𝙵𝙵`
+`𝘿𝙮𝙡𝙖𝙣𝘽𝙤𝙩-𝙈𝘿-  𝙺𝙰𝚁𝙸𝙼-𝙾𝙵𝙵`
