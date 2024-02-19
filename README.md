@@ -1,6 +1,6 @@
 >🤴𝗖𝗿𝗲𝗮𝗱𝗼𝗿: 𝙺𝙰𝚁𝙸𝙼-𝙾𝙵𝙵
 
-## `💫𝙎𝙚𝙗𝙖𝙨𝘽𝙤𝙩-𝙈𝘿` 
+## `💫𝘿𝙮𝙡𝙖𝙣𝘽𝙤𝙩-𝙈𝘿` 
 <p align="center">
 <img src="https://telegra.ph/file/b43195a12b0ec71a61e92.jpg" alt="SebasBot-MD" width="900"/>
 </p>
@@ -8,7 +8,7 @@
 
 
 
-### `—◉ 🤖𝙎𝙚𝙗𝙖𝙨-𝘽𝙤𝙩-𝗠𝗗🤖`
+### `—◉ 🤖𝘿𝙮𝙡𝙖𝙣-𝘽𝙤𝙩-𝗠𝗗🤖`
 <a href="https://api.whatsapp.com/send/?phone=5491149158196&text=/estado&type=phone_number&app_absent=0" target="blank"><img src="https://img.shields.io/badge/BOT_OFICIAL-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 😃𝗦𝗜 𝗡𝗢 𝗥𝗘𝗦𝗣𝗢𝗡𝗗𝗘 𝗘𝗦 𝗣𝗢𝗥 𝗤𝗨𝗘 𝗘𝗟 𝗡𝗨𝗠𝗘𝗥𝗢 𝗘𝗦𝗧𝗔 𝗘𝗡 𝗦𝗢𝗣𝗢𝗥𝗧𝗘 𝗬 𝗘𝗡 𝗘𝗦𝗘 𝗖𝗔𝗦𝗢 𝗛𝗔𝗕𝗟𝗘 𝗖𝗢𝗡 𝗘𝗟 𝗦𝗧𝗔𝗙𝗙💖
@@ -28,7 +28,7 @@
 ### `—◉ 📍𝗔𝗰𝘁𝗶𝘃𝗮𝗿 𝗲𝗻 𝘁𝗲𝗿𝗺𝘂𝘅📍` 
 -:
 ```bash
-Bot de uso exclusivo no publico
+𝘽𝙤𝙩 𝙙𝙚 𝙪𝙨𝙤 𝙚𝙭𝙘𝙡𝙪𝙨𝙞𝙫𝙤 𝙣𝙤 𝙥𝙪𝙗𝙡𝙞𝙘𝙤
 ```
 
  ### `—◉ 🌹DUDAS SOBRE EL BOT?,CONTACTA AL CREADOR🌹`
