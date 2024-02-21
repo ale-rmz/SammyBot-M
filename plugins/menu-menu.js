@@ -557,9 +557,9 @@ mentionedJid: [m.sender],
 forwardingScore: 9, 
 externalAdReply: {
 title: '❑— 𝙎𝙚𝙗𝙖𝙨𝘽𝙤𝙩-𝙈𝘿 —❑\nWʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
-//body: 'Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
+//body: '',
 thumbnail: img,
-sourceUrl: 'https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6',
+sourceUrl: '',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
