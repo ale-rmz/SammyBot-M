@@ -31,42 +31,42 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `*[❗] Los comandos +1
 │╰───────────────
 └───────────────────┘
 
-┏━━━━━━━━━━━━━━━━┓
-┃ < 𝐂𝐨𝐧𝐭𝐞𝐧𝐢𝐝𝐨 +18 />
-┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣❥🔞  _${usedPrefix}pack_
-┣❥🔞  _${usedPrefix}pack2_
-┣❥🔞  _${usedPrefix}pack3_
-┣❥🔞  _${usedPrefix}videoxxx_
-┣❥🔞  _${usedPrefix}videolesbixxx_
-┣❥🔞  _${usedPrefix}tetas_
-┣❥🔞  _${usedPrefix}booty_
-┣❥🔞  _${usedPrefix}ecchi_
-┣❥🔞  _${usedPrefix}furro_
-┣❥🔞  _${usedPrefix}imagenlesbians_
-┣❥🔞  _${usedPrefix}panties_
-┣❥🔞  _${usedPrefix}pene_
-┣❥🔞  _${usedPrefix}porno_
-┣❥🔞  _${usedPrefix}randomxxx_
-┣❥🔞  _${usedPrefix}pechos_
-┣❥🔞  _${usedPrefix}yaoi_
-┣❥🔞  _${usedPrefix}yaoi2_
-┣❥🔞  _${usedPrefix}yuri_
-┣❥🔞  _${usedPrefix}yuri2_
-┣❥🔞  _${usedPrefix}trapito_
-┣❥🔞  _${usedPrefix}hentai_
-┣❥🔞  _${usedPrefix}nsfwloli_
-┣❥🔞  _${usedPrefix}nsfworgy_
-┣❥🔞  _${usedPrefix}nsfwfoot_
-┣❥🔞  _${usedPrefix}nsfwass_
-┣❥🔞  _${usedPrefix}nsfwbdsm_
-┣❥🔞  _${usedPrefix}nsfwcum_
-┣❥🔞  _${usedPrefix}nsfwero_
-┣❥🔞  _${usedPrefix}nsfwfemdom_
-┣❥🔞  _${usedPrefix}nsfwglass_
-┣❥🔞  _${usedPrefix}hentaipdf *<texto>*_
-┣❥🔞  _${usedPrefix}hentaisearch *<texto>*_
-┗━━━━━━━━━━━━━━━━┛`.trim();
+╭──────────────────╮
+│⏤͟͟͞𝐌𝐄𝐍𝐔 +𝟏𝟖
+├──────────────────╯
+│➼🔞 𝐩𝐚𝐜𝐤
+│➼🔞 𝐩𝐚𝐜𝐤𝟐
+│➼🔞 𝐩𝐚𝐜𝐤𝟑
+│➼🔞 𝐯𝐢𝐝𝐞𝐨𝐱𝐱𝐱
+│➼🔞 𝐯𝐢𝐝𝐞𝐨𝐥𝐞𝐬𝐛𝐢𝐱𝐱𝐱
+│➼🔞 𝐭𝐞𝐭𝐚𝐬
+│➼🔞 𝐛𝐨𝐨𝐭𝐲
+│➼🔞 𝐞𝐜𝐜𝐡𝐢
+│➼🔞 𝐟𝐮𝐫𝐫𝐨
+│➼🔞 𝐢𝐦𝐚𝐠𝐞𝐧𝐥𝐞𝐬𝐛𝐢𝐚𝐧𝐬
+│➼🔞 𝐩𝐚𝐧𝐭𝐢𝐞𝐬
+│➼🔞 𝐩𝐞𝐧𝐞
+│➼🔞 𝐩𝐨𝐫𝐧𝐨
+│➼🔞 𝐫𝐚𝐧𝐝𝐨𝐦𝐱𝐱𝐱
+│➼🔞 𝐩𝐞𝐜𝐡𝐨𝐬
+│➼🔞 𝐲𝐚𝐨𝐢
+│➼🔞 𝐲𝐚𝐨𝐢𝟐
+│➼🔞 𝐲𝐮𝐫𝐢
+│➼🔞 𝐲𝐮𝐫𝐢𝟐
+│➼🔞 𝐭𝐫𝐚𝐩𝐢𝐭𝐨
+│➼🔞 𝐡𝐞𝐧𝐭𝐚𝐢
+│➼🔞 𝐧𝐬𝐟𝐰𝐥𝐨𝐥𝐢
+│➼🔞 𝐧𝐬𝐟𝐰𝐨𝐫𝐠𝐲
+│➼🔞 𝐧𝐬𝐟𝐰𝐟𝐨𝐨𝐭
+│➼🔞 𝐧𝐬𝐟𝐰𝐚𝐬𝐬
+│➼🔞 𝐧𝐬𝐟𝐰𝐛𝐝𝐬𝐦
+│➼🔞 𝐧𝐬𝐟𝐰𝐜𝐮𝐦
+│➼🔞 𝐧𝐬𝐟𝐰𝐞𝐫𝐨
+│➼🔞 𝐧𝐬𝐟𝐰𝐟𝐞𝐦𝐝𝐨𝐦
+│➼🔞 𝐧𝐬𝐟𝐰𝐠𝐥𝐚𝐬𝐬
+│➼🔞 𝐡𝐞𝐧𝐭𝐚𝐢𝐩𝐝𝐟 <𝚝𝚎𝚡𝚝𝚘>
+│➼🔞 𝐡𝐞𝐧𝐭𝐚𝐢𝐬𝐞𝐚𝐫𝐜𝐡 <𝚝𝚎𝚡𝚝𝚘>
+╰──────────────────╯`.trim();
     if (m.isGroup) {
       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
       await conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2});
