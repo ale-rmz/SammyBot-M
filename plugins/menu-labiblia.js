@@ -132,7 +132,7 @@ let menu = `┌───────────────────┐
 │➼🔞 𝐡𝐞𝐧𝐭𝐚𝐢𝐬𝐞𝐚𝐫𝐜𝐡 <𝚝𝚎𝚡𝚝𝚘>
 ╰──────────────────╯`.trim()
 //conn.sendFile(m.chat, pp, 'lp.jpg', menu, m, false, { contextInfo: { mentionedJid }})
-let img = await (await fetch(`https://telegra.ph/file/3871edd05ec8f3989f61d.jpg`)).buffer()  
+let img = await (await fetch(`https://telegra.ph/file/7362916d2199909096789.jpg`)).buffer()  
 await conn.sendMessage(m.chat, {
 text: menu,
 contextInfo: { 
@@ -150,7 +150,7 @@ await m.react('✅')
 } catch (e) {
 //await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)        
 }}
-handler.help = ['menu', 'help', '?']
+handler.help = ['labiblia', 'help', '?']
 handler.tags = ['main']
 handler.command = /^(labiblia|menuhot|MenuHot|allm\?)$/i
 //handler.register = true
