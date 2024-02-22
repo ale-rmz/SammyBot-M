@@ -51,22 +51,22 @@ const handler = async (m, { conn, usedPrefix }) => {
   ];
   const document = doc[Math.floor(Math.random() * doc.length)];
   const Message = {
-    document: { url: `https://github.com/JOSTINofc/Goku-Bot-Lite` },
+    document: { url: `https://github.com/Karim-off/DylanBot1` },
     mimetype: `application/${document}`,
-    fileName: `[𝑮𝒐𝒌𝒖𝑩𝒐𝒕𝑳𝒊𝒕𝒆]`,
+    fileName: `[𝑫𝒚𝒍𝒂𝒏 𝑩𝒐𝒕]`,
     fileLength: 99999999999999,
     pageCount: 200,
     contextInfo: {
       forwardingScore: 200,
       isForwarded: true,
       externalAdReply: {
-        mediaUrl: "https://github.com/JOSTINofc/Goku-Bot-Lite",
+        mediaUrl: "https://github.com/Karim-off/DylanBot1",
         mediaType: 2,
         previewType: "pdf",
         title: "ᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛsᴀᴘᴘ",
         body: wm,
         thumbnail: imagen1,
-        sourceUrl: "https://github.com/JOSTINofc/Goku-Bot-Lite",
+        sourceUrl: "https://github.com/Karim-off/DylanBot1",
       },
     },
     caption: info,
