@@ -3,7 +3,7 @@ import fetch from 'node-fetch';
 const handler = async (m, { conn, args }) => {
    const res = await fetch('https://github.com/Karim-off/DylanBot1');
    const json = await res.json();
-   let txt = ` ◉ 𝑫𝒀𝑳𝑨𝑵 𝑩𝑶𝑻 ◉
+   let txt = ` 🧸 𝑫𝒀𝑳𝑨𝑵 𝑩𝑶𝑻 🧸
   
 𝘽𝙤𝙩 𝙙𝙚 𝙪𝙨𝙤 𝙚𝙭𝙘𝙡𝙪𝙨𝙞𝙫𝙤 𝙣𝙤 𝙙𝙞𝙨𝙥𝙤𝙣𝙞𝙗𝙡𝙚 
 𝙥𝙖𝙧𝙖 𝙪𝙨𝙤 𝙥𝙪𝙗𝙡𝙞𝙘𝙤 𝙢𝙚𝙣𝙨𝙖𝙟𝙚 📩 𝙙𝙚𝙡 𝙘𝙧𝙚𝙖𝙙𝙤𝙧
