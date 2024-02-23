@@ -24,7 +24,7 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `*🦋 𝐿𝑜𝑠 �
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `┌───────────────────┐
 │╭───────────────
-│├ *🧸𝗛𝗼𝗹𝗮⚡* 
+│├ *🧸𝗛𝗼𝗹𝗮⚡* @${m.sender.split`@`[0]}
 │├ *🧸𝘾𝙧𝙚𝙖𝙙𝙤𝙧:𝙺𝙰𝚁𝙸𝙼*
 │├ *🧸𝗡𝘂𝗺𝗲𝗿𝗼:+591 68683798*
 │├ *🧸𝙁𝙚𝙘𝙝𝙖: ${date}*
@@ -82,7 +82,7 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `*🦋 𝐿𝑜𝑠 �
     conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸𝙴𝙽𝙴 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁 𝚈 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙴𝙽𝚅𝙸𝙰𝚁𝙻𝙾, 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*', m);
   }
 };
-handler.command = /^(menuhorny|hornymenu|hornymenu)$/i;
+handler.command = /^(labiblia|hornymenu|Labiblia)$/i;
 handler.exp = 50;
 handler.fail = null;
 export default handler;
