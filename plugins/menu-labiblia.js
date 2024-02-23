@@ -1,8 +1,8 @@
 import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
-if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `*[❗] Los comandos +18 están desactivados en este grupo, si es admin y desea activarlos use ${usedPrefix}enable modohorny*`; 
+if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `*🦋 𝐿𝑜𝑠 𝐶𝑜𝑚𝑎𝑛𝑑𝑜𝑠 +18 𝐸𝑠𝑡𝑎𝑛 𝐷𝑒𝑠𝑎𝑐𝑡𝑖𝑣𝑎𝑑𝑜 𝑃𝑜𝑟 𝑈𝑛 𝐴𝑑𝑚𝑖𝑛, 𝑆𝑖 𝐸𝑟𝑒𝑠 𝐴𝑑𝑚 𝐸𝑠𝑐𝑟𝑖𝑏𝑒: !enable modohorny*`; 
   try {
-    const pp = 'src/+18.jpg'
+    const pp = imagen5;
     const vn = './media/La biblia.mp3';
     const d = new Date(new Date + 3600000);
     const locale = 'es';
@@ -18,15 +18,18 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `*[❗] Los comandos +1
     const readMore = more.repeat(850);
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
+
+ await conn.sendMessage(m.chat, { react: { text: '👏🏻', key: m.key } })
+
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `┌───────────────────┐
 │╭───────────────
-│├ *🧸𝗛𝗼𝗹𝗮* @user
+│├ *🧸𝗛𝗼𝗹𝗮⚡* 
 │├ *🧸𝘾𝙧𝙚𝙖𝙙𝙤𝙧:𝙺𝙰𝚁𝙸𝙼*
 │├ *🧸𝗡𝘂𝗺𝗲𝗿𝗼:+591 68683798*
-│├ *🧸𝙁𝙚𝙘𝙝𝙖: 21 de febrero de 2024*
-│├ *🧸𝘼𝙘𝙩𝙞𝙫𝙤: 00:04:38*
-│├ *🧸𝙍𝙚𝙜𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙨: 0*
+│├ *🧸𝙁𝙚𝙘𝙝𝙖: ${date}*
+│├ *🧸𝘼𝙘𝙩𝙞𝙫𝙤: ${uptime}*
+│├ *🧸𝙍𝙚𝙜𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙨: ${rtotalreg}*
 │├ *🧸𝙃𝙚𝙧𝙢𝙤𝙨𝙤 𝗱𝗶𝗮 𝗽𝗮𝗿𝗮 𝘁𝗶*
 │╰───────────────
 └───────────────────┘
@@ -68,8 +71,7 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `*[❗] Los comandos +1
 │➼🔞 𝐡𝐞𝐧𝐭𝐚𝐢𝐬𝐞𝐚𝐫𝐜𝐡 <𝚝𝚎𝚡𝚝𝚘>
 ╰──────────────────╯`.trim();
     if (m.isGroup) {
-      const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
-      await conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2});
+      await conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: m});
       await conn.sendFile(m.chat, vn, 'La biblia.mp3', null, m, true, {type: 'audioMessage', ptt: true});
     } else {
       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
@@ -77,13 +79,14 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `*[❗] Los comandos +1
       await conn.sendFile(m.chat, vn, 'La biblia.mp3', null, m, true, {type: 'audioMessage', ptt: true});
     }
   } catch {
-    conn.reply(m.chat, '[✅] 𝗠𝗲𝗻𝘂 𝗲𝗻𝘃𝗶𝗮𝗱𝗼 𝗰𝗼𝗿𝗿𝗲𝗰𝘁𝗮𝗺𝗲𝗻𝘁𝗲, 𝘀𝗶 𝗻𝗼 𝘀𝗲 𝗲𝗻𝘃𝗶𝗼 𝗿𝗲𝗽𝗼𝗿𝘁𝗲𝗹𝗼', m);
+    conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸𝙴𝙽𝙴 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁 𝚈 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙴𝙽𝚅𝙸𝙰𝚁𝙻𝙾, 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*', m);
   }
 };
-handler.command = /^(menulabiblia|labiblia|Labiblia)$/i;
+handler.command = /^(menuhorny|hornymenu|hornymenu)$/i;
 handler.exp = 50;
 handler.fail = null;
 export default handler;
+
 function clockString(ms) {
   const h = isNaN(ms) ? '--' : Math.floor(ms / 3600000);
   const m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60;
