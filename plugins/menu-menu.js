@@ -548,7 +548,7 @@ let menu = `┌───────────────────┐
 │➼🍭 𝐜𝐚𝐫𝐭𝐨𝐨𝐧 𝚛𝚎𝚜𝚙𝚘𝚗𝚍𝚎𝚛 𝚊 𝚒𝚖𝚊𝚐𝚎𝚗
 ╰──────────────────╯`.trim()
 //conn.sendFile(m.chat, pp, 'lp.jpg', menu, m, false, { contextInfo: { mentionedJid }})
-let img = await (await fetch(`https://telegra.ph/file/3871edd05ec8f3989f61d.jpg`)).buffer()  
+let img = await (await fetch(`https://telegra.ph/file/95d1a41c7b36f977d553a.jpg`)).buffer()  
 await conn.sendMessage(m.chat, {
 text: menu,
 contextInfo: { 
@@ -562,7 +562,7 @@ sourceUrl: 'https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
-await m.react('✅')        
+await m.react('🧸')        
 } catch (e) {
 //await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)        
 }}
