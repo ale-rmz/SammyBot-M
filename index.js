@@ -1,4 +1,4 @@
-console.log('🌹ㅤejecutando GokuBotLite-MD...');
+console.log('🧸ㅤejecutando DylanBot-MD...');
 import {join, dirname} from 'path';
 import {createRequire} from 'module';
 import {fileURLToPath} from 'url';
@@ -13,11 +13,11 @@ const {name, author} = require(join(__dirname, './package.json'));
 const {say} = cfonts;
 const rl = createInterface(process.stdin, process.stdout);
 
-say('Goku - Bot - Lite \nMD', {
+say('Dylan - Bot \nMD', {
   font: 'chrome',
   align: 'center',
   gradient: ['red', 'magenta']});
-say(`propietario Global Jostin`, {
+say(`Creador Karim`, {
   font: 'console',
   align: 'center',
   gradient: ['red', 'magenta']});
@@ -32,7 +32,7 @@ function start(file) {
   isRunning = true;
   const args = [join(__dirname, file), ...process.argv.slice(2)];
 
-  say('Ajusta la pantalla para escanear el QR de GokuBotLite-MD', {
+  say('Ajusta la pantalla para escanear el QR de DylanBot-MD', {
     font: 'console',
     align: 'center',
     gradient: ['red', 'magenta']});
