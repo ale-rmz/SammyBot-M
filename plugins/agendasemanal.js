@@ -2,7 +2,7 @@ let handler = async (m, { isPrems, conn }) => {
 let time = global.db.data.users[m.sender].lastcofre + 0 // 36000000 10 Horas //86400000 24 Horas
 if (new Date - global.db.data.users[m.sender].lastcofre < 0) throw `[❗𝐈𝐍𝐅𝐎❗] 𝚈𝙰 𝚁𝙴𝙲𝙻𝙰𝙼𝙰𝚂𝚃𝙴 𝚃𝚄 𝙲𝙾𝙵𝚁𝙴\𝚗𝚅𝚄𝙴𝙻𝚅𝙴 𝙴𝙽 *${msToTime(time - new Date())}* 𝙿𝙰𝚁𝙰 𝚅𝙾𝙻𝚅𝙴𝚁 𝙰 𝚁𝙴𝙲𝙻𝙰𝙼𝙰𝚁`
 
-let img = 'https://cdn.discordapp.com/attachments/1202339620939898981/1207047394387165246/LAAGENDASEMANALESTAAQUIElAmorRoyaleestaenelaireconunnuevoemoteespecialyunnuevoa...tsdefiendelosPVdetuduoytuescuadradeamigoscontuspropiasmanosequipandoelpunoTriunfadorSupremoylak.jpg?ex=65de397c&is=65cbc47c&hm=6a06510d579316a185c522b7de2a164ad0a028f915e2f5f3fd8fcbc9fca66cd3&'
+let img = 'https://cdn.discordapp.com/attachments/1202339620939898981/1211132804809752616/LAAGENDASEMANALESTAAQUIEleganciapoderyPotenciaestanporllegar.ElCuellodeTortugaNe...alsiguientenivel.MASrangodanoyvelocidaddedisparoteesperanconlaspoderosasWoodpecker.Potenciaregresa.jpg?ex=65ed1652&is=65daa152&hm=2569d5a9fde71fc4376fc128e3ebb5729ae6199a1d0ef5384a1565f880cb0830&'
 let dia = Math.floor(Math.random() * 30)
 let tok = Math.floor(Math.random() * 10)
 let hadesb = Math.floor(Math.random() * 4000)
@@ -13,7 +13,7 @@ let expp = Math.floor(Math.random() * 5000)
   global.db.data.users[m.sender].joincount += tok
   global.db.data.users[m.sender].exp += expp
 
-let texto = `*AGENDA DE ESTA SEMANA ✅DB*`
+let texto = `*AGENDA DE ESTA SEMANAL 🧸*`
 
 const fkontak = {
         "key": {
