@@ -1,7 +1,7 @@
 const handler = async (m, {conn}) => {
   m.reply(global.Fem4);
 };
-handler.command = /^(Feminfinito14|feminfinito14)$/i;
+handler.command = /^(Feminfinito16|feminfinito16)$/i;
 export default handler;
 handler.admin = true
 handler.group = true
