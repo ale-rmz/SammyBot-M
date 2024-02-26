@@ -1,5 +1,5 @@
 const handler = async (m, {conn}) => {
-  m.reply(global.Fem4);
+  m.reply(global.Fem14);
 };
 handler.command = /^(Feminfinito14|feminfinito14)$/i;
 export default handler;
