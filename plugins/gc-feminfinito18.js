@@ -7,7 +7,7 @@ handler.admin = true
 handler.group = true
 handler.botAdmin = true
 
-global.Fem16 = ` 
+global.Fem18 = ` 
 ╭─────╼🧸𝙑𝙎 𝙁𝙀𝙈🧸╾─────╮ㅤ
 │
 │         🧸 𝘿𝙮𝙡𝙖𝙣𝘽𝙤𝙩-𝙈𝘿 🧸
