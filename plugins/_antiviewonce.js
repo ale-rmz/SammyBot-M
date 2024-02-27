@@ -13,9 +13,9 @@ export async function before(m, {isAdmin, isBotAdmin}) {
       buffer = Buffer.concat([buffer, chunk]);
     }
     if (/video/.test(type)) {
-      return this.sendFile(m.chat, buffer, 'error.mp4', `${msg[type].caption}\n\n𝐏𝐮𝐞𝐝𝐨 𝐯𝐞𝐫 𝐭𝐨𝐝𝐨 𝐬𝐢𝐢`, m);
+      return this.sendFile(m.chat, buffer, 'error.mp4', `${msg[type].caption}\n\n𝙔𝙤 𝙥𝙪𝙚𝙙𝙤 𝙫𝙚𝙧𝙡𝙤 𝙩𝙤𝙙𝙤`, m);
     } else if (/image/.test(type)) {
-      return this.sendFile(m.chat, buffer, 'error.jpg', `${msg[type].caption}\n\n𝐏𝐮𝐞𝐝𝐨 𝐯𝐞𝐫 𝐭𝐨𝐝𝐨 𝐬𝐢𝐢`, m);
+      return this.sendFile(m.chat, buffer, 'error.jpg', `${msg[type].caption}\n\n𝙔𝙤 𝙥𝙪𝙚𝙙𝙤 𝙫𝙚𝙧𝙡𝙤 𝙩𝙤𝙙𝙤`, m);
     }
   }
 }
