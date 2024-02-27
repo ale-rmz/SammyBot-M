@@ -1,6 +1,5 @@
 const handler = async (m, {conn}) => {
   m.reply(global.SpamApk);
-    const pp = imagen5;
 };
 handler.command = /^(SpamApk|Apkspam)$/i;
 export default handler;
