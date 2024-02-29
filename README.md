@@ -34,6 +34,13 @@
 ### `—◉📄𝑮𝒓𝒖𝒑𝒐 𝒅𝒆 𝒔𝒐𝒑𝒐𝒓𝒕𝒆📄◉—`
 <a href="https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6" target="blank"><img src="https://img.shields.io/badge/GRUPO_DE_SOPORTE-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
+### `—◉ ⚠️𝑰𝒎𝒑𝒐𝒓𝒕𝒂𝒏𝒕𝒆⚠️◉—` 
+
+```bash
+𝑬𝒍 𝑩𝒐𝒕 𝒆𝒔 𝒅𝒆 𝒖𝒔𝒐 𝒆𝒙𝒄𝒍𝒖𝒔𝒊𝒗𝒐 𝒄𝒓𝒆𝒂𝒅𝒐 𝒚 𝒎𝒐𝒅𝒊𝒇𝒊𝒄𝒂𝒅𝒐 𝒑𝒐𝒓 𝑲𝒂𝒓𝒊𝒎-𝒐𝒇𝒇 𝒔𝒊 𝒒𝒖𝒊𝒆𝒓𝒆𝒔 𝒄𝒐𝒍𝒂𝒃𝒐𝒓𝒂𝒄𝒊ó𝒏 𝒆𝒔𝒄𝒓í𝒃𝒆𝒎𝒆!!
+𝑵𝒐 𝒊𝒏𝒕𝒆𝒏𝒕𝒆𝒔 𝒄𝒐𝒑𝒊𝒂𝒓 𝒆𝒍 𝒃𝒐𝒕 𝒑𝒐𝒓 𝒇𝒂𝒗𝒐𝒓 𝒓𝒆𝒔𝒑𝒆𝒕𝒂 𝒆𝒍 𝒕𝒓𝒂𝒃𝒂𝒋𝒐 𝒅𝒆 𝒄𝒂𝒅𝒂 𝒄𝒓𝒆𝒂𝒅𝒐𝒓 𝒚 𝒎𝒐𝒅𝒊𝒇𝒊𝒄𝒂𝒅𝒐𝒓
+```
+
 
 ## `🧸𝑬𝒅𝒊𝒕𝒐𝒓 𝒚 𝑪𝒓𝒆𝒂𝒅𝒐𝒓 𝒅𝒆𝒍 𝑩𝒐𝒕🧸` 
 <a href="https://github.com/Karim-off"><img src="https://github.com/Karim-off.png" width="250" height="250" alt="Karim"/></a>
