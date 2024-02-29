@@ -22,7 +22,8 @@
 <a href="https://www.instagram.com/usxr_angelito?igsh=OGY1bGE1d3EyY212" target="blank"><img src="https://img.shields.io/badge/INSTAGRAM-25D366?style=for-the-badge&logo=Instagram&logoColor=white" />
 </a>
 
-### `—◉ ♣️𝑰𝒏𝒇𝒐𝒓𝒎𝒂𝒄𝒊𝒐𝒏♣️◉—` 
+- ### `✵ 🐢𝑰𝒏𝒔𝒕𝒂𝒍𝒂𝒓 𝑷𝒐𝒓 𝑹𝒆𝒏𝒅𝒆𝒓🍓`
+### `● ♣️𝑰𝒏𝒇𝒐𝒓𝒎𝒂𝒄𝒊𝒐𝒏♣️◉—` 
 
 ```bash
 𝘽𝙤𝙩 𝙙𝙚 𝙪𝙨𝙤 𝙚𝙭𝙘𝙡𝙪𝙨𝙞𝙫𝙤 𝙣𝙤 𝙥𝙪𝙗𝙡𝙞𝙘𝙤 ✖️
