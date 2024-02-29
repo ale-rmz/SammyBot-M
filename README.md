@@ -4,7 +4,7 @@
 
 ## `🧸𝕯𝖞𝖑𝖆𝖓 𝕭𝖔𝖙 𝕸𝕯` 
 <p align="center">
-<img src="https://telegra.ph/file/b43195a12b0ec71a61e92.jpg" alt="DylanBot-MD" width="900"/>
+<img src="https://telegra.ph/file/b43195a12b0ec71a61e92.jpg" alt="DylanBot-MD" width="800"/>
 </p>
 
 
