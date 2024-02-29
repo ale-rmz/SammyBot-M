@@ -4,7 +4,7 @@
 
 ## `🧸𝕯𝖞𝖑𝖆𝖓 𝕭𝖔𝖙 𝕸𝕯` 
 <p align="center">
-<img src="https://telegra.ph/file/b43195a12b0ec71a61e92.jpg" alt="SebasBot-MD" width="900"/>
+<img src="https://telegra.ph/file/b43195a12b0ec71a61e92.jpg" alt="DylanBot-MD" width="900"/>
 </p>
 
 
@@ -45,7 +45,7 @@
 ```
 
 
-## `● 🧸𝑬𝒅𝒊𝒕𝒐𝒓 𝒚 𝑪𝒓𝒆𝒂𝒅𝒐𝒓 𝒅𝒆𝒍 𝑩𝒐𝒕🧸 ●` 
+## `● 🧸𝑪𝒓𝒆𝒂𝒅𝒐𝒓 𝒅𝒆𝒍 𝑩𝒐𝒕🧸 ●` 
 <a href="https://github.com/Karim-off"><img src="https://github.com/Karim-off.png" width="250" height="250" alt="Karim"/></a>
   
 
