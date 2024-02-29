@@ -36,7 +36,7 @@
  ### `—◉ ⚡𝑫𝒖𝒅𝒂𝒔 𝒔𝒐𝒃𝒓𝒆 𝒆𝒍 𝑩𝒐𝒕?⚡`
 <a href="http://wa.me/59168683798" target="blank"><img src="https://img.shields.io/badge/KARIM_CREADOR-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
-### `—◉📄CUSTOMER SUPPORT📄◉—`
+### `—◉📄𝑮𝒓𝒖𝒑𝒐 𝒅𝒆 𝒔𝒐𝒑𝒐𝒓𝒕𝒆📄◉—`
 <a href="http://wa.me/59168683798" target="blank"><img src="https://img.shields.io/badge/KARIM_COSTOMER_SUPPORT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 
