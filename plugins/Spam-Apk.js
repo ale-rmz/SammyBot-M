@@ -18,9 +18,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
-    const str = `
-
-𝐋𝐈𝐍𝐊 𝐀𝐏𝐊 𝐃𝐄 𝐒𝐏𝐀𝐌 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏
+    const str = `𝐋𝐈𝐍𝐊 𝐀𝐏𝐊 𝐃𝐄 𝐒𝐏𝐀𝐌 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏
 
 https://www.mediafire.com/file/elvm4t2m0tf25ux/SPAM_WHATSAPP.apk/file
 
@@ -40,7 +38,7 @@ https://www.mediafire.com/file/elvm4t2m0tf25ux/SPAM_WHATSAPP.apk/file
       conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2});
     }
   } catch {
-    conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸𝙴𝙽𝙴 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁 𝚈 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙴𝙽𝚅𝙸𝙰𝚁𝙻𝙾, 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*', m);
+    conn.reply(m.chat, '𝑨𝒑𝒌 𝒆𝒏𝒗𝒊𝒂𝒅𝒐 📩 𝒔𝒊 𝒏𝒐 𝒔𝒆 𝒆𝒏𝒗𝒊𝒐 𝒓𝒆𝒑𝒐𝒓𝒕𝒂𝒍𝒐 𝒄𝒐𝒏 𝒆𝒍 𝒔𝒕𝒂𝒇𝒇 𝒐 𝒄𝒓𝒆𝒂𝒅𝒐𝒓 𝒅𝒆𝒍 𝒃𝒐𝒕', m);
   }
 };
 handler.command = /^(Apkspam|apkspam|spamapk)$/i;
