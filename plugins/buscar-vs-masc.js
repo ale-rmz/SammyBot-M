@@ -30,7 +30,7 @@ global.Buscarvsmasc = `
 ⊹ ִֶָ  🌩️Hablar con IG si o si.
 ⊹ ִֶָ  🌩️Con logo en mano
 
-🔱𝗛𝗮𝗯𝗹𝗮𝗿:🔱
+⚡𝗛𝗮𝗯𝗹𝗮𝗿:⚡
 wa.me/
 wa.me/
 `;
