@@ -1,7 +1,7 @@
 const handler = async (m, {conn}) => {
   m.reply(global.SpamLink);
 };
-handler.command = /^(SpamComu)$/i;
+handler.command = /^(Spam1|spam1)$/i;
 export default handler;
 global.SpamLink = `
 
