@@ -24,6 +24,7 @@ global.bsmixto = `
 │🫧𝙈𝙤𝙙𝙖𝙡𝙞𝙙𝙖𝙙:
 │⏰ 00 🇦🇷 ⌇ 22 🇵🇪
 ╰──────────────────╯
+
 ⊹ ִֶָ  🌩️Mis reglas, No modifico
 ⊹ ִֶָ  🌩️1 🖥
 ⊹ ִֶָ  💌Hablar con IG si o si.
