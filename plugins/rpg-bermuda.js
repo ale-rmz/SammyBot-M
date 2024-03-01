@@ -35,7 +35,7 @@ global.db.data.users[m.sender].lastcofre = new Date * 1
 }
 handler.help = ['daily']
 handler.tags = ['xp']
-handler.command = ['bermuda', 'Bermuda', 'kalahari'] 
+handler.command = ['bermuda', 'Bermuda', 'bermuda'] 
 handler.register = true
 export default handler
 
