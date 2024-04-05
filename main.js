@@ -81,6 +81,7 @@ global.loadDatabase = async function loadDatabase() {
 };
 loadDatabase();
 
+/* Creditos a Otosaka (https://wa.me/51993966345) */
 
 global.chatgpt = new Low(new JSONFile(path.join(__dirname, '/db/chatgpt.json')));
 global.loadChatgptDB = async function loadChatgptDB() {
@@ -107,42 +108,75 @@ loadChatgptDB();
 
 /* ------------------------------------------------*/
 
-global.authFile = `GokuSession`;
+global.authFile = `MysticSession`;
 const {state, saveState, saveCreds} = await useMultiFileAuthState(global.authFile);
 const msgRetryCounterMap = (MessageRetryMap) => { };
+const msgRetryCounterCache = new NodeCache()
 const {version} = await fetchLatestBaileysVersion();
+let phoneNumber = global.botnumber
+
+const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
+const useMobile = process.argv.includes("--mobile")
+const rl = readline.createInterface({ input: process.stdin, output: process.stdout })
+const question = (texto) => new Promise((resolver) => rl.question(texto, resolver))
 
 const connectionOptions = {
-  printQRInTerminal: true,
-  patchMessageBeforeSending: (message) => {
-    const requiresPatch = !!( message.buttonsMessage || message.templateMessage || message.listMessage );
-    if (requiresPatch) {
-      message = {viewOnceMessage: {message: {messageContextInfo: {deviceListMetadataVersion: 2, deviceListMetadata: {}}, ...message}}};
-    }
-    return message;
-  },
-  getMessage: async (key) => {
-    if (store) {
-      const msg = await store.loadMessage(key.remoteJid, key.id);
-      return conn.chats[key.remoteJid] && conn.chats[key.remoteJid].messages[key.id] ? conn.chats[key.remoteJid].messages[key.id].message : undefined;
-    }
-    return proto.Message.fromObject({});
-  },
-  msgRetryCounterMap,
-  logger: pino({level: 'silent'}),
-  auth: {
-    creds: state.creds,
-    keys: makeCacheableSignalKeyStore(state.keys, pino({level: 'silent'})),
-  },
-  browser: ['Dylansito-MD', 'Safari', '1.0.0'],
-  version,
-  defaultQueryTimeoutMs: undefined,
+        logger: pino({ level: 'silent' }),
+        printQRInTerminal: !pairingCode, 
+        mobile: useMobile, 
+        browser: ['Ubuntu', 'Chrome', '20.0.04'],
+        auth: {
+            creds: state.creds,
+            keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
+        },
+        markOnlineOnConnect: true, 
+        generateHighQualityLinkPreview: true, 
+        getMessage: async (clave) => {
+            let jid = jidNormalizedUser(clave.remoteJid)
+            let msg = await store.loadMessage(jid, clave.id)
+            return msg?.message || ""
+        },
+        msgRetryCounterCache,
+        msgRetryCounterMap,
+        defaultQueryTimeoutMs: undefined,   
+        version
 };
 
 global.conn = makeWASocket(connectionOptions);
+
+    if (pairingCode && !conn.authState.creds.registered) {
+        if (useMobile) throw new Error('No se puede usar un código de emparejamiento con la API móvil')
+
+        let numeroTelefono
+        if (!!phoneNumber) {
+            numeroTelefono = phoneNumber.replace(/[^0-9]/g, '')
+
+            if (!Object.keys(PHONENUMBER_MCC).some(v => numeroTelefono.startsWith(v))) {
+                console.log(chalk.bgBlack(chalk.redBright("Comience con el código de país de su número de WhatsApp.\nEjemplo: +59168683798")))
+                process.exit(0)
+            }
+        } else {
+            numeroTelefono = await question(chalk.bgBlack(chalk.greenBright(`Por favor, escriba su número de WhatsApp.\nEjemplo: +59168683798 : `)))
+            numeroTelefono = numeroTelefono.replace(/[^0-9]/g, '')
+            if (!Object.keys(PHONENUMBER_MCC).some(v => numeroTelefono.startsWith(v))) {
+                console.log(chalk.bgBlack(chalk.redBright("Comience con el código de país de su número de WhatsApp.\nEjemplo: +59168683798")))
+
+                numeroTelefono = await question(chalk.bgBlack(chalk.greenBright(`Por favor, escriba su número de WhatsApp.\nEjemplo: +59168683798 : `)))
+                numeroTelefono = numeroTelefono.replace(/[^0-9]/g, '')
+                rl.close()
+            }
+        }
+
+        setTimeout(async () => {
+            let codigo = await conn.requestPairingCode(numeroTelefono)
+            codigo = codigo?.match(/.{1,4}/g)?.join("-") || codigo
+            console.log(chalk.black(chalk.bgGreen(`Su código de emparejamiento: `)), chalk.black(chalk.white(codigo)))
+        }, 3000)
+    }
+
 conn.isInit = false;
 conn.well = false;
-conn.logger.info(`Ƈᴀʀɢᴀɴᴅᴏ．．．\n`);
+conn.logger.info(`[ ℹ️ ] Cargando...\n`);
 
 if (!opts['test']) {
   if (global.db) {
@@ -156,8 +190,26 @@ if (!opts['test']) {
 if (opts['server']) (await import('./server.js')).default(global.conn, PORT);
 
 
+/* Y ese fue el momazo mas bueno del mundo
+        Aunque no dudara tan solo un segundo
+        Mas no me arrepiento de haberme reido
+        Por que la grasa es un sentimiento
+        Y ese fue el momazo mas bueno del mundo
+        Aunque no dudara tan solo un segundo
+        que me arrepiento de ser un grasoso
+        Por que la grasa es un sentimiento
+        - El waza 👻👻👻👻 (Aiden)            
+        
+   Yo tambien se hacer momazos Aiden...
+        ahi te va el ajuste de los borrados
+        inteligentes de las sesiones y de los sub-bot
+        By (Rey Endymion 👺👍🏼) 
+        
+   Ninguno es mejor que tilin god
+        - atte: sk1d             */
+
 function clearTmp() {
-  const tmp = [tmpdir(), join(__dirname, './tmp')];
+  const tmp = [join(__dirname, './tmp')];
   const filename = [];
   tmp.forEach((dirname) => readdirSync(dirname).forEach((file) => filename.push(join(dirname, file))));
   return filename.map((file) => {
@@ -169,13 +221,13 @@ function clearTmp() {
 
 function purgeSession() {
 let prekey = []
-let directorio = readdirSync("./LoboSession")
+let directorio = readdirSync("./MysticSession")
 let filesFolderPreKeys = directorio.filter(file => {
 return file.startsWith('pre-key-') /*|| file.startsWith('session-') || file.startsWith('sender-') || file.startsWith('app-') */
 })
 prekey = [...prekey, ...filesFolderPreKeys]
 filesFolderPreKeys.forEach(files => {
-unlinkSync(`./HachikoSession/${files}`)
+unlinkSync(`./MysticSession/${files}`)
 })
 } 
 
@@ -196,11 +248,11 @@ unlinkSync(`./jadibts/${directorio}/${fileInDir}`)
 })
 if (SBprekey.length === 0) return; //console.log(chalk.cyanBright(`=> No hay archivos por eliminar.`))
 } catch (err) {
-console.log(chalk.bold.red(`=> Algo salio mal durante la eliminación, archivos no eliminados`))
+console.log(chalk.bold.red(`[ ℹ️ ] Algo salio mal durante la eliminación, archivos no eliminados`))
 }}
 
 function purgeOldFiles() {
-const directories = ['./GokuSession/', './jadibts/']
+const directories = ['./MysticSession/', './jadibts/']
 const oneHourAgo = Date.now() - (60 * 60 * 1000)
 directories.forEach(dir => {
 readdirSync(dir, (err, files) => {
@@ -231,11 +283,10 @@ async function connectionUpdate(update) {
   }
   if (global.db.data == null) loadDatabase();
   if (update.qr != 0 && update.qr != undefined) {
-    console.log(chalk.yellow('🌹ㅤEscanea este codigo QR, el codigo QR expira en 60 segundos.'));
+    console.log(chalk.yellow('[ ℹ️ ] Escanea el código QR o introduce el código de emparejamiento en WhatsApp.'));
   }
   if (connection == 'open') {
-    console.log(chalk.yellow('▣──────────────────────────────···\n│\n│❧ 𝙲𝙾𝙽𝙴𝙲𝚃𝙰𝙳𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰𝙼𝙴𝙽𝚃𝙴 𝙰𝙻 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 ✅\n│\n▣──────────────────────────────···'))
-conn.fakeReply('59168683798@s.whatsapp.net', '🚀💖 𝑯𝒐𝒍𝒂 𝑪𝒓𝒆𝒂𝒅𝒐𝒓 𝑺𝒐𝒚 𝑫𝒚𝒍𝒂𝒏𝑩𝒐𝒕-𝑴𝑫\n𝑹𝒆𝒄𝒊𝒆𝒏𝒕𝒆𝒎𝒆𝒏𝒕𝒆 𝑴𝒆 𝑯𝒆 𝑪𝒐𝒏𝒆𝒄𝒕𝒂𝒅𝒐 𝑪𝒐𝒎𝒐 𝑼𝒏 𝑵𝒖𝒆𝒗𝒐 𝑩𝒐𝒕 𝑶𝒇𝒊𝒄𝒊𝒂𝒍', '0@s.whatsapp.net', '✨️𝑫𝒚𝒍𝒂𝒏𝑩𝒐𝒕-𝑴𝑫✨', '0@s.whatsapp.net')
+    console.log(chalk.yellow('[ ℹ️ ] Conectado correctamente.'));
   }
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode;
 if (connection === 'close') {
@@ -300,14 +351,14 @@ global.reloadHandler = async function(restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate);
   }
 
-  conn.welcome = '*╭─────────────────────╮* \n*│🧸@subjectﾠ* \n*├────────────────* \n*│🧸@user* \n*│🧸 𝑩𝒊𝒆𝒏𝒗𝒆𝒏𝒊𝒅𝒐/𝒂* \n*│🧸 𝑳𝒆𝒂 𝒍𝒂 𝒅𝒆𝒔𝒄𝒓𝒊𝒑𝒄𝒊𝒐𝒏!!* \n*│🧸 𝑫𝒆𝒔𝒄𝒓𝒊𝒑𝒄𝒊𝒐𝒏 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐!!*\n@desc\n\n*│* \n*│🧸 𝑫𝒊𝒔𝒇𝒓𝒖𝒕𝒂 𝒕𝒖 𝒆𝒔𝒕𝒂𝒅𝒊𝒂!!*\n*╰─────────────────────╯*';
-  conn.bye = '*╭─────────────────────╮*\n*│🧸@user* \n*│🧸 ¡𝑩𝒀𝑬 𝑩𝒀𝑬! 👋🏻* \n*│🧸 ¡𝒀 𝑵𝑶 𝑽𝑼𝑬𝑳𝑽𝑨𝑺!* \n*╰─────────────────────╯*';
-  conn.spromote = '╭──────────────────╮ \n│❱❱ *𝒊𝒏𝒇𝒐𝒓𝒎𝒂𝒄𝒊𝒐𝒏* ❰❰ ❕\n*│🧸@user*   \n*│🧸 𝑵𝒖𝒆𝒗𝒐 𝒂𝒅𝒎𝒊𝒏 𝒆𝒏 𝒆𝒍 𝒈𝒓𝒖𝒑𝒐* \n*│🧸 𝑫𝒚𝒍𝒂𝒏 𝑩𝒐𝒕* \n╰──────────────────╯';
-  conn.sdemote = '*╭──────────────────╮* \n*│❱❱ 𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝚃𝙸𝚅𝙾 ❰❰ ❕*\n*│🧸* @user \n*│🧸 𝒀𝒂 𝒏𝒐 𝒆𝒓𝒆𝒔 𝒂𝒅𝒎𝒊𝒏* \n*│🧸 𝑫𝒚𝒍𝒂𝒏 𝑩𝒐𝒕* \n*╰──────────────────╯*';
-  conn.sDesc = '*╭──────────────────╮* \n*│❱❱ 𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝚃𝙸𝚅𝙾 ❰❰ ❕* \n*│🧸 𝙎𝙀 𝙈𝙊𝘿𝙄𝙁𝙄𝘾𝙊 𝙇𝘼* \n*│🧸 𝘿𝙀𝙎𝘾𝙍𝙄𝙋𝘾𝙄𝙊𝙉 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊* \n*│🧸 𝙉𝙐𝙀𝙑𝘼 𝘿𝙀𝙎𝘾𝙍𝙄𝙋𝘾𝙄𝙊𝙉* \n*│🧸𝘿𝙔𝙇𝘼𝙉 𝘽𝙊𝙏* \n*│🧸* @desc \n*╰──────────────────╯*';
-  conn.sSubject = '*╭──────────────────╮* \n*│❱❱ 𝒊𝒏𝒇𝒐𝒓𝒎𝒂𝒄𝒊𝒐𝒏 ❰❰ ❕*\n*│🧸 𝑺𝒆 𝒄𝒂𝒎𝒃𝒊𝒐 𝒆𝒍 𝒏𝒐𝒎𝒃𝒓𝒆 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐*\n*│🧸 𝑵𝒖𝒆𝒗𝒐 𝒏𝒐𝒎𝒃𝒓𝒆*\n*│🧸: @subjectﾠ*\n*│🧸 𝑫𝒚𝒍𝒂𝒏 𝑩𝒐𝒕* \n*╰──────────────────╯*';
-  conn.sIcon = '*╭──────────────────╮* \n*│❱❱ 𝒊𝒏𝒇𝒐𝒓𝒎𝒂𝒄𝒊𝒐𝒏 ❰❰ ❕*\n*│🧸 𝑺𝒆 𝒄𝒂𝒎𝒃𝒊𝒐 𝒍𝒂 𝒇𝒐𝒕𝒐 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐*\n*│🧸 𝑫𝒚𝒍𝒂𝒏 𝑩𝒐𝒕* \n*╰──────────────────╯';
-  conn.sRevoke = '*╭──────────────────╮* \n*│❱❱ 𝒊𝒏𝒇𝒐𝒓𝒎𝒂𝒄𝒊𝒐𝒏 ❰❰ ❕*\n*│🧸 𝑺𝒆 𝒂 𝒓𝒆𝒔𝒕𝒂𝒃𝒍𝒆𝒄𝒊𝒅𝒐 𝑬𝒍 𝒍𝒊𝒏𝒌*\n*│🧸 𝑫𝒚𝒍𝒂𝒏 𝑩𝒐𝒕*\n*│🧸: @revokeﾠ* \n*╰──────────────────╯*';
+  conn.welcome = '┏━━━━━━━━━━━━━━━━━━━━┓\n┣・ @subject\n┣━━━━━━━━━━━━━━━━━━━━┛\n┣・🐣 @user\n┣・💫 𝑩𝒊𝒆𝒏𝒗𝒆𝒏𝒊𝒅𝒐/𝒂 \n┣・💫 𝑳𝒆𝒆 𝒕𝒐𝒅𝒂 𝒍𝒂 ↓\n┣・💫 𝑫𝒆𝒔𝒄𝒓𝒊𝒑𝒄𝒊𝒐𝒏 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐:\n┃\n\n@desc\n\n┃\n┣・💫 𝑫𝒊𝒔𝒇𝒓𝒖𝒕𝒂 𝒕𝒖 𝒆𝒔𝒕𝒂𝒅𝒊𝒂!!\n┗━━━━━━━━━━━━━━━━━━━━┛';
+  conn.bye = '┏━━━━━━━━━━━━━━━━━━━━━┓\n┣・🐣 @user\n┣・🐣 ¡𝑼𝑵 𝑵𝑬𝑮𝑹𝑶 𝑴𝑬𝑵𝑶𝑺! 👋🏻\n┣・🐣 ¡𝑵𝑶 𝑻𝑬 𝑬𝑿𝑻𝑹𝑨Ñ𝑨𝑹𝑬𝑴𝑶𝑺!\n┗━━━━━━━━━━━━━━━━━━━━━┛';
+  conn.spromote = '┏━━━━━━━━━━━━━━━━━━━━━┓\n┣・🐣 𝑰𝒏𝒇𝒐𝒓𝒎𝒂𝒄𝒊𝒐𝒏 ❕\n┣・🐣 @⁨user\n┣・🐣 𝑭𝒖𝒆 𝒑𝒓𝒐𝒎𝒐𝒗𝒊𝒅𝒐 𝒂 𝒂𝒅𝒎𝒊𝒏\n┣・🐣 𝑺𝒆𝒃𝒂𝒔 𝑩𝒐𝒕\n┗━━━━━━━━━━━━━━━━━━━━━┛';
+  conn.sdemote = '┏━━━━━━━━━━━━━━━━━━━━━┓\n┣・🐣 𝑰𝒏𝒇𝒐𝒓𝒎𝒂𝒄𝒊𝒐𝒏 ❕\n┣・🐣 @⁨user\n┣・🐣 𝑭𝒖𝒆 𝒅𝒆𝒈𝒓𝒂𝒅𝒂𝒅𝒐 𝒂 𝒂𝒅𝒎𝒊𝒏\n┣・🐣 𝑺𝒆𝒃𝒂𝒔 𝑩𝒐𝒕\n┗━━━━━━━━━━━━━━━━━━━━━┛';
+  conn.sDesc = '┏━━━━━━━━━━━━━━━━━━━━━┓\n┣・🐣 𝑰𝒏𝒇𝒐𝒓𝒎𝒂𝒄𝒊𝒐𝒏 ❕\n┣・🐣 𝑳𝒂 𝒅𝒆𝒔𝒄𝒓𝒊𝒑𝒄𝒊𝒐𝒏 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐 \n┣・🐣 𝒉𝒂 𝒔𝒊𝒅𝒐 𝒎𝒐𝒅𝒊𝒇𝒊𝒄𝒂𝒅𝒂\n┣・🐣 𝑺𝒆𝒃𝒂𝒔 𝑩𝒐𝒕\n┗━━━━━━━━━━━━━━━━━━━━━┛';
+  conn.sSubject = '┏━━━━━━━━━━━━━━━━━━━━━┓\n┣・🐣 𝑰𝒏𝒇𝒐𝒓𝒎𝒂𝒄𝒊𝒐𝒏 ❕\n┣・🐣 𝑬𝒍 𝒏𝒐𝒎𝒃𝒓𝒆 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐\n┣・🐣 𝒉𝒂 𝒔𝒊𝒅𝒐 𝒎𝒐𝒅𝒊𝒇𝒊𝒄𝒂𝒅𝒐\n┣・🐣 𝑺𝒆𝒃𝒂𝒔 𝑩𝒐𝒕\n┗━━━━━━━━━━━━━━━━━━━━━┛';
+  conn.sIcon = '┏━━━━━━━━━━━━━━━━━━━━━┓\n┣・🐣 𝑰𝒏𝒇𝒐𝒓𝒎𝒂𝒄𝒊𝒐𝒏 ❕\n┣・🐣 𝑺𝒆 𝒉𝒂 𝒄𝒂𝒎𝒃𝒊𝒂𝒅𝒐 𝒍𝒂 𝒇𝒐𝒕𝒐 \n┣・🐣 𝒅𝒆 𝒑𝒆𝒓𝒇𝒊𝒍 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐\n┣・🐣 𝑺𝒆𝒃𝒂𝒔 𝑩𝒐𝒕\n┗━━━━━━━━━━━━━━━━━━━━━┛';
+  conn.sRevoke = '┏━━━━━━━━━━━━━━━━━━━━━┓\n┣・🐣 𝑰𝒏𝒇𝒐𝒓𝒎𝒂𝒄𝒊𝒐𝒏 ❕\n┣・🐣 𝑬𝒍 𝒆𝒏𝒍𝒂𝒄𝒆 𝒅𝒆 𝒊𝒏𝒗𝒊𝒕𝒂𝒄𝒊𝒐𝒏 \n┣・🐣 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐 𝒉𝒂 𝒔𝒊𝒅𝒐 𝒓𝒆𝒔𝒕𝒂𝒃𝒍𝒆𝒄𝒊𝒅𝒐\n┣・🐣 𝑺𝒆𝒃𝒂𝒔 𝑩𝒐𝒕\n┗━━━━━━━━━━━━━━━━━━━━━┛';
 
   conn.handler = handler.handler.bind(global.conn);
   conn.participantsUpdate = handler.participantsUpdate.bind(global.conn);
@@ -417,59 +468,4 @@ async function _quickTest() {
   const test = await Promise.all([
     spawn('ffmpeg'),
     spawn('ffprobe'),
-    spawn('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-filter_complex', 'color', '-frames:v', '1', '-f', 'webp', '-']),
-    spawn('convert'),
-    spawn('magick'),
-    spawn('gm'),
-    spawn('find', ['--version']),
-  ].map((p) => {
-    return Promise.race([
-      new Promise((resolve) => {
-        p.on('close', (code) => {
-          resolve(code !== 127);
-        });
-      }),
-      new Promise((resolve) => {
-        p.on('error', (_) => resolve(false));
-      })]);
-  }));
-  const [ffmpeg, ffprobe, ffmpegWebp, convert, magick, gm, find] = test;
-  const s = global.support = {ffmpeg, ffprobe, ffmpegWebp, convert, magick, gm, find};
-  Object.freeze(global.support);
-}
-setInterval(async () => {
-  if (stopped === 'close' || !conn || !conn.user) return;
-  const a = await clearTmp();
-  console.log(chalk.cyanBright(`\n▣───────────[ 𝙰𝚄𝚃𝙾𝙲𝙻𝙴𝙰𝚁TMP ]──────────────···\n│\n▣─❧ 𝙰𝚁𝙲𝙷𝙸𝚅𝙾𝚂 𝙴𝙻𝙸𝙼𝙸𝙽𝙰𝙳𝙾𝚂 ✅\n│\n▣───────────────────────────────────────···\n`));
-}, 180000);
-setInterval(async () => {
-  if (stopped === 'close' || !conn || !conn.user) return;
-  await purgeSession();
-  console.log(chalk.cyanBright(`\n▣────────[ AUTOPURGESESSIONS ]───────────···\n│\n▣─❧ ARCHIVOS ELIMINADOS ✅\n│\n▣────────────────────────────────────···\n`));
-}, 1000 * 60 * 60);
-setInterval(async () => {
-  if (stopped === 'close' || !conn || !conn.user) return;
-  await purgeSessionSB();
-  console.log(chalk.cyanBright(`\n▣────────[ AUTO_PURGE_SESSIONS_SUB-BOTS ]───────────···\n│\n▣─❧ ARCHIVOS ELIMINADOS ✅\n│\n▣────────────────────────────────────···\n`));
-}, 1000 * 60 * 60);
-setInterval(async () => {
-  if (stopped === 'close' || !conn || !conn.user) return;
-  await purgeOldFiles();
-  console.log(chalk.cyanBright(`\n▣────────[ AUTO_PURGE_OLDFILES ]───────────···\n│\n▣─❧ ARCHIVOS ELIMINADOS ✅\n│\n▣────────────────────────────────────···\n`));
-}, 1000 * 60 * 60);
-setInterval(async () => {
-  if (stopped === 'close' || !conn || !conn.user) return;
-  const status = global.db.data.settings[conn.user.jid] || {};
-  const _uptime = process.uptime() * 1000;
-  const uptime = clockString(_uptime);
-  const bio = `፧፧ 𝑫𝒀𝑳𝑨𝑵 𝑩𝑶𝑻 🧸 ፧፧ 𝒎𝒂𝒙𝒊𝒎𝒂 𝒑𝒐𝒕𝒆𝒏𝒄𝒊𝒂🫧 ፧፧ 𝒄𝒓𝒆𝒂𝒅𝒐𝒓 @𝒖𝒔𝒙𝒓_𝒂𝒏𝒈𝒆𝒍𝒊𝒕𝒐`;
-  await conn.updateProfileStatus(bio).catch((_) => _);
-}, 60000);
-function clockString(ms) {
-  const d = isNaN(ms) ? '--' : Math.floor(ms / 86400000);
-  const h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24;
-  const m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60;
-  const s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60;
-  return [d, ' Dia(s) ️', h, ' Hora(s) ', m, ' Minuto(s) ', s, ' Segundo(s) '].map((v) => v.toString().padStart(2, 0)).join('');
-}
-_quickTest().catch(console.error);
+    spawn('ffmpeg', ['-hide_banner', '-loglevel'
