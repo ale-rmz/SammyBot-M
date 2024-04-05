@@ -1,6 +1,6 @@
-package lobo
+package Dylan
 
-import "jostin"
+import "Angelito"
 
 func lobo() {
     ender.Println("Basura eliminada!")
