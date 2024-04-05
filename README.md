@@ -46,7 +46,7 @@
 
 
 ## `● 🧸𝑪𝒓𝒆𝒂𝒅𝒐𝒓 𝒅𝒆𝒍 𝑩𝒐𝒕🧸 ●` 
-<a href="https://github.com/Karim-off"><img src="https://github.com/Karim-off.png" width="250" height="250" alt="Karim"/></a>
+<a href="https://github.com/Karim-off"><img src="https://github.com/Karim-off.png" width="300" height="300" alt="Karim"/></a>
   
 
 
