@@ -31,7 +31,7 @@ const handler = async (m, {text, conn, args, usedPrefix, command}) => {
       }
     }
   }
-  const { key } = await conn.sendMessage(m.chat, {text: `*_⏳Sᴇ ᴇsᴛᴀ ᴘʀᴏᴄᴇsᴀɴᴅᴏ Sᴜ ᴀᴜᴅɪᴏ...⏳_*\n\n*◉ Sɪ Sᴜ ᴀᴜᴅɪᴏ ɴᴏ ᴇs ᴇɴᴠɪᴀᴅᴏ, ᴘʀᴜᴇʙᴇ ᴄᴏɴ ᴇʟ ᴄᴏᴍᴀɴᴅᴏ #playdoc ᴏ #play.2 ᴏ #ytmp4doc ◉*`}, {quoted: m});
+  const { key } = await conn.sendMessage(m.chat, {text: `*_⏳*𝖲𝖾 𝖾𝗌𝗍𝖺 𝗉𝗋𝗈𝖼𝖾𝗌𝖺𝗇𝖽𝗈 𝗌𝗎 𝗏𝗂𝖽𝖾𝗈...⏳_*\𝗇\𝗇 𝖲𝗂 𝗌𝗎 𝗏𝗂𝖽𝖾𝗈 𝗇𝗈 𝖾𝗌 𝖾𝗇𝗏𝗂𝖺𝖽𝗈, 𝗉𝗋𝗎𝖾𝖻𝖾 𝖼𝗈𝗇 𝗅𝗈𝗌 𝖼𝗈𝗆𝖺𝗇𝖽𝗈𝗌 #playdoc , #play.2 , #ytmp4doc.`}, {quoted: m});
   try {
     const formats = await bestFormat(youtubeLink, 'audio');
     const dl_url = await getUrlDl(formats.url);
