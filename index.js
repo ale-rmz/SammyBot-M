@@ -1,4 +1,4 @@
-console.log('🧸ㅤejecutando DylanBot-MD...');
+console.log('🧸ㅤejecutando SammyBot...');
 import {join, dirname} from 'path';
 import {createRequire} from 'module';
 import {fileURLToPath} from 'url';
@@ -13,11 +13,11 @@ const {name, author} = require(join(__dirname, './package.json'));
 const {say} = cfonts;
 const rl = createInterface(process.stdin, process.stdout);
 
-say('Dylan - Bot \nMD', {
+say('Sammy - Bot \nMD', {
   font: 'chrome',
   align: 'center',
   gradient: ['red', 'magenta']});
-say(`Creador Karim`, {
+say(`Creador Ale`, {
   font: 'console',
   align: 'center',
   gradient: ['red', 'magenta']});
@@ -32,7 +32,7 @@ function start(file) {
   isRunning = true;
   const args = [join(__dirname, file), ...process.argv.slice(2)];
 
-  say('Ajusta la pantalla para escanear el QR de DylanBot-MD', {
+  say('Ajusta la pantalla para escanear el QR de SammyBot-MD', {
     font: 'console',
     align: 'center',
     gradient: ['red', 'magenta']});
