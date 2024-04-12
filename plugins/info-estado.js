@@ -5,15 +5,31 @@ const handler = async (m, {conn}) => {
     const _uptime = process.uptime() * 1000;
     const uptime = clockString(_uptime);
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
-    const str = `╭────[💖 𝑮𝒐𝒌𝒖𝑩𝒐𝒕𝑳𝒊𝒕𝒆-𝑴𝑫 💖]
-│
-│ *➤ ʜᴏʟᴀ ${taguser}*
-│
-│ *=> 🖥️ ᴛɪᴇᴍᴘᴏ ᴀᴄᴛɪᴠᴏ:* ${uptime}
-│ *=> 🖱️ ʙᴏᴛ ᴅᴇ ᴜsᴏ ᴘᴜʙʟɪᴄᴏ*
-│ *=> 🍇 𝐂𝐑𝐄𝐀𝐃𝐎𝐑: 𝑱𝑶𝑺𝑻𝑰𝑵*
-│ *=> 🍁 ʀᴇᴘᴏsɪᴛᴏʀɪᴏ ᴏғᴄ:* https://github.com/JOSTINofc/Goku-Bot-Lite
-╰────────────────`.trim();
+    const str = `_*< INFO - ESTADO />*_
+
+ [🤴🏻] *Prop.:* 𝘼𝙡𝙚𝙚 𝙧𝙢𝙯 🧸🩷
+ [#️⃣] *WA:* wa.me/5493585753625
+ [🤖] *IG:* @axr.rmz
+
+ [💡] *Ping:* ${rtime}
+ [🚀]*Uptime:* ${uptime}
+ [🎳] *Prefijo:* ${usedPrefix}
+ [☑️] *Modo:* ${self ? "privado" : "público"}
+ [🦜] *Usuarios regs.:* ${totalusrReg}
+ [🌎] *Usuarios totales:* ${totalusr}
+ [👨‍🦯] *Tipo de bot:* ${(conn.user.jid == global.conn.user.jid ? '' : `Sub-bot de:\n ▢ +${global.conn.user.jid.split`@`[0]}`) || 'No es sub-bot'}
+ 
+ [🔐] *Chats privados:* ${chats.length - groups.length}
+ [🌎] *Grupos:* ${groups.length}
+ [🤖] *Chats totales:* ${chats.length}
+ 
+ [🏢] *Autoread:* ${autoread ? "activo" : "desactivado"}
+ [❗] *Restrict:* ${restrict ? "activo" : "desactivado"}
+ [📵] *PCOnly:* ${pconly ? "activado" : "desactivado"}
+ [💬] *GPOnly:* ${gconly ? "activado" : "desactivado"}
+ [🔐] *AntiPrivado:* ${antiprivado ? "activado" : "desactivado"}
+ [📵] *AntiLlamada:* ${antiCall ? "activado" : "desactivado"}
+ [🤖] *ModeJadiBot:* ${modejadibot ? "activado" : "desactivado"}`.trim();
     if (m.isGroup) {
       conn.sendMessage(m.chat, {text: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.titulowm, "containsAutoReply": true, "mediaType": 1, "thumbnail": pp, "mediaUrl": global.md`, "sourceUrl": global.md`}}}, {quoted: m});
     } else {
