@@ -17,23 +17,23 @@ _- Lo que realice con el BOT queda solo en Usted ya que en Numero(s) Oficial(es)
 
 _- Es posible que en Numero(s) Oficial(es) el Bot no este Activado las 24 Horas de los 7 dias de la Semana, eso no implica que no lo este o que Propietarios NO OFICIALES puedan Hacerlo._
 
-_- El chat anonimo del comando #start, valga la redundancia no mostrará ningun dato de los Usuarios por parte de Dylan-Bot-MD. Eso no implica que las personas que hagan uso de esta funcion puedan dar a conocer sus datos. en Numero(s) Oficial(es)._
+_- El chat anonimo del comando #start, valga la redundancia no mostrará ningun dato de los Usuarios por parte de Sammy-Bot-MD. Eso no implica que las personas que hagan uso de esta funcion puedan dar a conocer sus datos. en Numero(s) Oficial(es)._
 
-_- Los Datos que Obtenga Dylan-bot-MD en Cuentas Oficiales de Usuarios(as), Grupos y Ajustes del Mismo puede verse Reiniciado, Modificado, y/o Retificado con el fin de que el Bot este en optimas Condiciones para su Uso. (Usuarios(as) Pueden Pedir Compensacion Por el numero wa.me/59168683798 o por el comando #Reporte. Debe de Presentar Pruebas)._
+_- Los Datos que Obtenga Sammy-Bot-MD en Cuentas Oficiales de Usuarios(as), Grupos y Ajustes del Mismo puede verse Reiniciado, Modificado, y/o Retificado con el fin de que el Bot este en optimas Condiciones para su Uso. (Usuarios(as) Pueden Pedir Compensacion Por el numero wa.me/5493585753625 o por el comando #Reporte. Debe de Presentar Pruebas)._
 
 _- NO somos responsable si Hay alteraciones de este Bot no siendo Numero(s) Oficial(es) y tengan de uso un Repositorio de GitHub que no corresponda al Oficial, o que implementen Usuarios de Terceros integraciones que comprometan a los(as) Usuarios(as) al utilizar Versiones no Oficiales._
 
 _- La funcion Sub Bot Garantiza la seguridad de sus Datos aplicada a Cuentas Oficiales._
 
 
-🍷𝗚𝗶𝘁𝗵𝘂𝗯 𝗱𝗲 𝘿𝙮𝙡𝙖𝙣 𝘽𝙤𝙩
+🍷𝗚𝗶𝘁𝗵𝘂𝗯 𝗱𝗲 𝙎𝙖𝙢𝙢𝙮 𝘽𝙤𝙩
 ${md}
 
-🪁𝗦𝗶 𝘁𝗲 𝗮 𝗴𝘂𝘀𝘁𝗮𝗱𝗼 𝗲𝗹 𝗯𝗼𝘁, 𝗽𝘂𝗲𝗱𝗲𝘀 𝗱𝗼𝗻𝗮𝗿:
+🪁𝗦𝗶 𝘁𝗲 𝗮𝗵 𝗴𝘂𝘀𝘁𝗮𝗱𝗼 𝗲𝗹 𝗯𝗼𝘁, 𝗽𝘂𝗲𝗱𝗲𝘀 𝗱𝗼𝗻𝗮𝗿:
 ~ _Si te Agrada y valoras el Trabajo que he realizado, puedes ayudarme en Donar Numeros para que pueda continuar en este Proyecto_
-wa.me/59168683798
+wa.me/5493585753625
 
-🧸𝗧𝗲 𝗮𝘀 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝗱𝗼 𝘀𝗼𝗯𝗿𝗲 𝘿𝙮𝙡𝙖𝙣𝗕𝗼𝘁`.trim()
+🧸𝗧𝗲 𝗵𝗮𝘀 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝗱𝗼 𝘀𝗼𝗯𝗿𝗲 𝗦𝗮𝗺𝗺𝘆 𝗕𝗼𝘁`.trim()
 await conn.sendFile(m.chat, imagen1, 'gata.mp4', Terminos)
 }
 handler.customPrefix = /terminos|t茅rminos|t茅rminos, condiciones y privacidad|terminos, condiciones y privacidad|t茅rminos y condiciones y privacidad|terminosycondicionesyprivacidad|terminosycondiciones|terminos y condiciones y privacidad|terminos y condiciones|terminos y condiciones|terminos de uso|Terminos de uso|Termin贸 se uso|t茅rminos de uso|T茅rminos de uso|T茅rminos y condiciones/i
