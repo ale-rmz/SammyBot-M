@@ -1,16 +1,16 @@
 const handler = async (m, {conn, usedPrefix}) => {
   const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
   const document = doc[Math.floor(Math.random() * doc.length)];
-  const text = `𝐇𝐨𝐥𝐚 𝐮𝐬𝐮𝐚𝐫𝐢𝐨 👋, 𝐓𝐞 𝐢𝐧𝐯𝐢𝐭𝐨 𝐚 𝐮𝐧𝐢𝐫𝐭𝐞 𝐚 𝐥𝐨𝐬 𝐠𝐫𝐮𝐩𝐨𝐬 𝐎𝐅𝐂 𝐝𝐞 𝑫𝒚𝒍𝒂𝒏𝑩𝒐𝒕-𝑴𝑫 :D
+  const text = `𝘏𝘰𝘭𝘢 𝘶𝘴𝘶𝘢𝘳𝘪𝘰🫶, 𝘌𝘴𝘵𝘢𝘴 𝘪𝘯𝘷𝘪𝘵𝘢𝘥𝘰 𝘢 𝘶𝘯𝘪𝘳𝘵𝘦 𝘢 𝘭𝘰𝘴 𝘨𝘳𝘶𝘱𝘰𝘴 𝘰𝘧𝘤 𝘥𝘦 𝘚𝘢𝘮𝘮𝘺𝘉𝘰𝘵-𝘔𝘋 🫀
 
-➤ 𝐆𝐫𝐮𝐩𝐨𝐬 𝐨𝐟𝐢𝐜𝐢𝐚𝐥𝐞𝐬 𝐝𝐞𝐥 𝑫𝒚𝒍𝒂𝒏:
+➤ 𝙶𝚛𝚞𝚙𝚘𝚜 𝚘𝚏𝚒𝚌𝚒𝚊𝚕𝚎𝚜 𝚍𝚎 𝚂𝚊𝚖𝚖𝚢:
 
 🦋 𝐆𝐑𝐔𝐏𝐎 𝐎𝐅𝐂:
  
-༄ https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6 ༆
+༄ https://chat.whatsapp.com/Gq4sgn9JH7kJmu7vGx5485 ༆
 
-🦋 𝗖𝗮𝗻𝗮𝗹 𝘿𝙮𝙡𝙖𝙣:
-༄ https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y ༄
+🦋 𝗖𝗮𝗻𝗮𝗹 𝗗𝗲 𝗔𝗹𝗲:
+༄ https://whatsapp.com/channel/0029Vab0Bez3QxS6HnWr3Z3t ༄
 `.trim();
   const buttonMessage= {
     'document': {url: `https://github.com/Karim-off/DylanBot1`},
