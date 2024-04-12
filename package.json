@@ -1,7 +1,7 @@
 {
-  "name": "DylanBot1",
+  "name": "SammyBot",
   "version": "1.0.0",
-  "description": "DylanBot1",
+  "description": "SammyBot",
   "main": "index.js",
   "type": "module",
   "directories": {
@@ -16,16 +16,16 @@
     "eslint": "eslint .",
     "eslintfix": "eslint --fix ."
   },
-  "homepage": "https://github.com/Karim-off/DylanBot1",
+  "homepage": "https://github.com/ale-rmz/SammyBot-MD",
   "author": {
-    "name": "Karim"
+    "name": "Ale"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Karim-off/DylanBot1.git"
+    "url": "git+https://github.com/ale-rmz/SammyBot-MD.git"
   },
   "bugs": {
-    "url": "https://github.com/Karim-off/DylanBot1/issues"
+    "url": "https://github.com/ale-rmz/SammyBot-MD/issues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
