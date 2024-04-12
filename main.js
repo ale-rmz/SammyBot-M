@@ -462,7 +462,7 @@ setInterval(async () => {
   const status = global.db.data.settings[conn.user.jid] || {};
   const _uptime = process.uptime() * 1000;
   const uptime = clockString(_uptime);
-  const bio = `፧፧ 𝑫𝒀𝑳𝑨𝑵 𝑩𝑶𝑻 ⛈️ ፧፧ 𝒎𝒂𝒙𝒊𝒎𝒂 𝒑𝒐𝒕𝒆𝒏𝒄𝒊𝒂🫧 ፧፧ 𝒄𝒓𝒆𝒂𝒅𝒐𝒓 @𝒖𝒔𝒙𝒓_𝒂𝒏𝒈𝒆𝒍𝒊𝒕𝒐`;
+  const bio = `፧፧ 𝙎𝙖𝙢𝙢𝙮 𝘽𝙤𝙩 🧸 ፧፧ 𝙩𝙪 𝙗𝙤𝙩 𝙛𝙖𝙫𝙤𝙧𝙞𝙩𝙤🩷 ፧፧ 𝙘𝙧𝙚𝙖𝙙𝙤𝙧 @axr.rmz`;
   await conn.updateProfileStatus(bio).catch((_) => _);
 }, 60000);
 function clockString(ms) {
