@@ -22,29 +22,19 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `┏━━━━━━━━━━━━━━━━━━
-┣┅⟣✦ 𝑮𝒐𝒌𝒖𝑩𝒐𝒕𝑳𝒊𝒕𝒆-𝑴𝑫
+┣┅⟣✦ 𝘚𝘢𝘮𝘮𝘺𝘉𝘰𝘵-𝘔𝘋
 ┣┅⟣✦ 𝗖𝗼𝗹𝗮𝗯𝗼𝗿𝗮𝗱𝗼𝗿𝗲𝘀(𝗦𝘁𝗮𝗳𝗳)
 ┗━━━━━━━━━━━━━━━━━━┛
 ━━━━━━━━━━━━━━━━━━━━
 ┣┅⟣✦𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝗶𝗼𝘀 𝗚𝗶𝘁𝗵𝘂𝗯
-┣𝗝𝗼𝘀𝘁𝗶𝗻|𝗚𝗶𝘁𝗵𝘂𝗯: https://github.com/JOSTINofc/Goku-Bot-Lite
+┣𝗔𝗹𝗲𝗲|𝗚𝗶𝘁𝗵𝘂𝗯: https://github.com/ale-rmz
 
-┣𝗘𝗻𝗱𝗲𝗿|𝗚𝗶𝘁𝗵𝘂𝗯:https://github.com/Ender-GB-Isis777
+┣𝗔𝗻𝗴𝗲𝗹𝗶𝘁𝗼|𝗚𝗶𝘁𝗵𝘂𝗯:https://github.com/Karim-off
 
-┣𝗔𝘇𝗮𝗺𝗶|𝗚𝗶𝘁𝗵𝘂𝗯: https://github.com/Azamijs/Curiositybot-MD
-
-┣𝗔𝘅𝗲𝗹|𝗚𝗶𝘁𝗵𝘂𝗯: https://github.com/Jxtxn17
-
-┣𝗘𝗻𝘇𝗼|𝗚𝗶𝘁𝗵𝘂𝗯: https://github.com/Enzito-Vase
-
-┣┅⟣✦𝗡𝘂𝗺𝗲𝗿𝗼𝘀 
-┣𝗝𝗼𝘀𝘁𝗶𝗻:+593 939 005 387
-┣𝗘𝗻𝗱𝗲𝗿:+505 5812 4470
-┣𝗔𝘇𝗮𝗺𝗶:+52 729 488 8993
-┣𝗔𝘅𝗲𝗹:+51 929 972 576
-┣𝗘𝗻𝘇𝗼:+54 9 11 6875-8497
-┗━━━━━━━━━━━━━━━━━━┛
- `.trim();
+┣┅⟣✦𝗡𝘂́𝗺𝗲𝗿𝗼𝘀 
+┣𝗔𝗹𝗲𝗲:+5493585753625
+┣𝗔𝗻𝗴𝗲𝗹𝗶𝘁𝗼:++591 68683798
+┗━━━━━━━━━━━━━━━━━━┛`.trim();
     if (m.isGroup) {
       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
